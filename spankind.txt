@@ -1,0 +1,7 @@
+Numeric value	SpanKind	Meaning
+0	UNSPECIFIED	default / unknown
+1	INTERNAL	work inside a service
+2	SERVER	server handling a request
+3	CLIENT	client making a request
+4	PRODUCER	sending a message
+5	CONSUMER	receiving a message

@@ -1,0 +1,81 @@
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "2d4c2356cc033d2f70587f06fffe0178",
+		"SpanID": "202bdf3b7bfc7c13",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": { // parent span created by the midleware
+		"TraceID": "2d4c2356cc033d2f70587f06fffe0178",
+		"SpanID": "654e9bbe7191de44",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:46.149362124+01:00",
+	"EndTime": "2026-03-16T18:53:46.149393525+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 1
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}

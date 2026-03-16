@@ -1,0 +1,199 @@
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "31a1f15a06bbb44571cb33219dcb7f22", // 16 bytes
+		"SpanID": "93802ddd3b3272ae", // 8 bytes
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000", // 16 bytes - this span has no parent, so it is zeroed
+		"SpanID": "0000000000000000", // 8 bytes 
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:39:56.865384074+01:00",
+	"EndTime": "2026-03-16T18:39:56.865453734+01:00",
+	"Attributes": [ // automaticaly set by otelhttp - standards attrs defined by OpenTelemetry HTTP Semantic conventions
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port", // TCP port of the client - may change for each conn, that is an ephemeral port
+			"Value": {
+				"Type": "INT64",
+				"Value": 43812
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 19
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null, // timestamps annotations that hapened inside the span
+    //may be
+    // "Events": [
+    //   {
+    //     "Name": "cache_miss",
+    //     "Time": "2026-03-16T18:40:01.123Z",
+    //     "Attributes": {
+    //       "key": "user:42"
+    //     }
+    //   }
+    // ]
+    // if i did span.AddEvent("cache_miss") for example
+	"Links": null, // a related span that it is not defined as parent span, may be in the case of a mesage queue:
+    // Producer span (service A)
+    //       │
+    //       └── message queue
+    //                │
+    //                ▼
+    // Consumer span (service B)
+    // "Links": [
+    //   {
+    //     "TraceID": "abc123",
+    //     "SpanID": "def456"
+    //   }
+    // ]
+	"Status": { // represents the application-level status of the span, may be
+		"Code": "Unset",
+		"Description": ""
+	},
+    // may be:
+    // cf: status.txt
+    // example:
+    // span.SetStatus(codes.Error, "database timeout")
+	"DroppedAttributes": 0, // if too much attrs was aded, sme would be automatically dropped
+	"DroppedEvents": 0, // same concepts as attrs but for events
+	"DroppedLinks": 0, // same mechanism
+	"ChildSpanCount": 0, // number of children span, like if there were:
+   //  HTTP request span
+   // ├─ DB query span
+   // └─ cache lookup span 
+   // then 2 childs
+   // and yess a span can know its children in the tot(child1, child2, ...) during BATCH TIME, becase the otel SDK allows it
+   // when a span is triggered ad it has a parent relationship, so this counter increments
+   // that is direct childs, not grandchilds, or whatever
+   // StartSpan(ctx):
+   //     parent = ctx.currentSpan
+   //     if parent != nil:
+   //         parent.childCount++
+	"Resource": [ // metadata about the entity hat produced the telemetry
+                  // 
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": { // same as IntrumentationScope, just deprecated
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+
+

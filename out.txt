@@ -1,0 +1,3440 @@
+{
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"ScopeMetrics": []
+}
+{
+	"Timestamp": "2026-03-16T18:53:44.446832704+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:44.446853464+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 1
+			}
+		}
+	],
+	"TraceID": "a375de8d00479cdbacc80d56138e5695",
+	"SpanID": "4657d9d8c00bafb5",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "a375de8d00479cdbacc80d56138e5695",
+		"SpanID": "4657d9d8c00bafb5",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "a375de8d00479cdbacc80d56138e5695",
+		"SpanID": "4129228960b926b9",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:44.446819354+01:00",
+	"EndTime": "2026-03-16T18:53:44.446876295+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 1
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "a375de8d00479cdbacc80d56138e5695",
+		"SpanID": "4129228960b926b9",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:44.446799824+01:00",
+	"EndTime": "2026-03-16T18:53:44.446913055+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 57830
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "355a527d2f2320c54c9b2d4f2bb24176",
+		"SpanID": "60f97f2c34640ecb",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "355a527d2f2320c54c9b2d4f2bb24176",
+		"SpanID": "85f410f34637369c",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:45.886400545+01:00",
+	"EndTime": "2026-03-16T18:53:45.886440445+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 5
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Timestamp": "2026-03-16T18:53:45.886405865+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:45.886424955+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 5
+			}
+		}
+	],
+	"TraceID": "355a527d2f2320c54c9b2d4f2bb24176",
+	"SpanID": "60f97f2c34640ecb",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "355a527d2f2320c54c9b2d4f2bb24176",
+		"SpanID": "85f410f34637369c",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:45.886386895+01:00",
+	"EndTime": "2026-03-16T18:53:45.886460326+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Timestamp": "2026-03-16T18:53:46.149367744+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:46.149382484+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 1
+			}
+		}
+	],
+	"TraceID": "2d4c2356cc033d2f70587f06fffe0178",
+	"SpanID": "202bdf3b7bfc7c13",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Timestamp": "2026-03-16T18:53:46.388651492+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:46.388655792+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 5
+			}
+		}
+	],
+	"TraceID": "a7e652072ddae132ec8bee56d7df9caa",
+	"SpanID": "260a8a3daaa535e0",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Timestamp": "2026-03-16T18:53:46.572644843+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:46.572649253+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 4
+			}
+		}
+	],
+	"TraceID": "19d4dc19c4ce8defe07d6b38e08355d2",
+	"SpanID": "ab4b3a85ecb35ec4",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"ScopeMetrics": [
+		{
+			"Scope": {
+				"Name": "go.opentelemetry.io/contrib/examples/dice",
+				"Version": "",
+				"SchemaURL": "",
+				"Attributes": null
+			},
+			"Metrics": [
+				{
+					"Name": "dice.rolls",
+					"Description": "The number of rolls by roll value",
+					"Unit": "{roll}",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 5
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:46.990082501+01:00",
+								"Value": 2,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:45.886435685+01:00",
+										"Value": 1,
+										"SpanID": "YPl/LDRkDss=",
+										"TraceID": "NVpSfS8jIMVMmy1PK7JBdg=="
+									},
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.388663502+01:00",
+										"Value": 1,
+										"SpanID": "JgqKPaqlNeA=",
+										"TraceID": "p+ZSBy3a4TLsi+5W19+cqg=="
+									}
+								]
+							},
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 1
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:46.990082501+01:00",
+								"Value": 2,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:44.446866885+01:00",
+										"Value": 1,
+										"SpanID": "RlfZ2MALr7U=",
+										"TraceID": "o3XejQBHnNusyA1WE45WlQ=="
+									},
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.149389985+01:00",
+										"Value": 1,
+										"SpanID": "ICvfO3v8fBM=",
+										"TraceID": "LUwjVswDPS9wWH8G//4BeA=="
+									}
+								]
+							},
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 4
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:46.990082501+01:00",
+								"Value": 1,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.572661163+01:00",
+										"Value": 1,
+										"SpanID": "q0s6heyzXsQ=",
+										"TraceID": "GdTcGcTOje/gfWs44INV0g=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality",
+						"IsMonotonic": true
+					}
+				}
+			]
+		},
+		{
+			"Scope": {
+				"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+				"Version": "0.67.0",
+				"SchemaURL": "",
+				"Attributes": null
+			},
+			"Metrics": [
+				{
+					"Name": "http.server.request.body.size",
+					"Description": "Size of HTTP server request bodies.",
+					"Unit": "By",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "http.request.method",
+										"Value": {
+											"Type": "STRING",
+											"Value": "GET"
+										}
+									},
+									{
+										"Key": "http.response.status_code",
+										"Value": {
+											"Type": "INT64",
+											"Value": 200
+										}
+									},
+									{
+										"Key": "network.protocol.name",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									},
+									{
+										"Key": "network.protocol.version",
+										"Value": {
+											"Type": "STRING",
+											"Value": "1.1"
+										}
+									},
+									{
+										"Key": "server.address",
+										"Value": {
+											"Type": "STRING",
+											"Value": "localhost"
+										}
+									},
+									{
+										"Key": "server.port",
+										"Value": {
+											"Type": "INT64",
+											"Value": 8080
+										}
+									},
+									{
+										"Key": "url.scheme",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989651691+01:00",
+								"Time": "2026-03-16T18:53:46.990114041+01:00",
+								"Count": 5,
+								"Bounds": [
+									0,
+									5,
+									10,
+									25,
+									50,
+									75,
+									100,
+									250,
+									500,
+									750,
+									1000,
+									2500,
+									5000,
+									7500,
+									10000
+								],
+								"BucketCounts": [
+									5,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0
+								],
+								"Min": 0,
+								"Max": 0,
+								"Sum": 0,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.572678723+01:00",
+										"Value": 0,
+										"SpanID": "TKqdI4xhWho=",
+										"TraceID": "GdTcGcTOje/gfWs44INV0g=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality"
+					}
+				},
+				{
+					"Name": "http.server.response.body.size",
+					"Description": "Size of HTTP server response bodies.",
+					"Unit": "By",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "http.request.method",
+										"Value": {
+											"Type": "STRING",
+											"Value": "GET"
+										}
+									},
+									{
+										"Key": "http.response.status_code",
+										"Value": {
+											"Type": "INT64",
+											"Value": 200
+										}
+									},
+									{
+										"Key": "network.protocol.name",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									},
+									{
+										"Key": "network.protocol.version",
+										"Value": {
+											"Type": "STRING",
+											"Value": "1.1"
+										}
+									},
+									{
+										"Key": "server.address",
+										"Value": {
+											"Type": "STRING",
+											"Value": "localhost"
+										}
+									},
+									{
+										"Key": "server.port",
+										"Value": {
+											"Type": "INT64",
+											"Value": 8080
+										}
+									},
+									{
+										"Key": "url.scheme",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989655211+01:00",
+								"Time": "2026-03-16T18:53:46.990121631+01:00",
+								"Count": 5,
+								"Bounds": [
+									0,
+									5,
+									10,
+									25,
+									50,
+									75,
+									100,
+									250,
+									500,
+									750,
+									1000,
+									2500,
+									5000,
+									7500,
+									10000
+								],
+								"BucketCounts": [
+									0,
+									5,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0
+								],
+								"Min": 2,
+								"Max": 2,
+								"Sum": 10,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.572680173+01:00",
+										"Value": 2,
+										"SpanID": "TKqdI4xhWho=",
+										"TraceID": "GdTcGcTOje/gfWs44INV0g=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality"
+					}
+				},
+				{
+					"Name": "http.server.request.duration",
+					"Description": "Duration of HTTP server requests.",
+					"Unit": "s",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "http.request.method",
+										"Value": {
+											"Type": "STRING",
+											"Value": "GET"
+										}
+									},
+									{
+										"Key": "http.response.status_code",
+										"Value": {
+											"Type": "INT64",
+											"Value": 200
+										}
+									},
+									{
+										"Key": "network.protocol.name",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									},
+									{
+										"Key": "network.protocol.version",
+										"Value": {
+											"Type": "STRING",
+											"Value": "1.1"
+										}
+									},
+									{
+										"Key": "server.address",
+										"Value": {
+											"Type": "STRING",
+											"Value": "localhost"
+										}
+									},
+									{
+										"Key": "server.port",
+										"Value": {
+											"Type": "INT64",
+											"Value": 8080
+										}
+									},
+									{
+										"Key": "url.scheme",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989660941+01:00",
+								"Time": "2026-03-16T18:53:46.990125021+01:00",
+								"Count": 5,
+								"Bounds": [
+									0.005,
+									0.01,
+									0.025,
+									0.05,
+									0.075,
+									0.1,
+									0.25,
+									0.5,
+									0.75,
+									1,
+									2.5,
+									5,
+									7.5,
+									10
+								],
+								"BucketCounts": [
+									5,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0
+								],
+								"Min": 0.000056511,
+								"Max": 0.000122582,
+								"Sum": 0.000395567,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.572681863+01:00",
+										"Value": 0.000074441,
+										"SpanID": "TKqdI4xhWho=",
+										"TraceID": "GdTcGcTOje/gfWs44INV0g=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality"
+					}
+				}
+			]
+		}
+	]
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "2d4c2356cc033d2f70587f06fffe0178",
+		"SpanID": "202bdf3b7bfc7c13",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "2d4c2356cc033d2f70587f06fffe0178",
+		"SpanID": "654e9bbe7191de44",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:46.149362124+01:00",
+	"EndTime": "2026-03-16T18:53:46.149393525+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 1
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "2d4c2356cc033d2f70587f06fffe0178",
+		"SpanID": "654e9bbe7191de44",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:46.149353014+01:00",
+	"EndTime": "2026-03-16T18:53:46.149405785+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "a7e652072ddae132ec8bee56d7df9caa",
+		"SpanID": "260a8a3daaa535e0",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "a7e652072ddae132ec8bee56d7df9caa",
+		"SpanID": "ca7f4627c247e907",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:46.388643991+01:00",
+	"EndTime": "2026-03-16T18:53:46.388667652+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 5
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "a7e652072ddae132ec8bee56d7df9caa",
+		"SpanID": "ca7f4627c247e907",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:46.388631821+01:00",
+	"EndTime": "2026-03-16T18:53:46.388682692+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "19d4dc19c4ce8defe07d6b38e08355d2",
+		"SpanID": "ab4b3a85ecb35ec4",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "19d4dc19c4ce8defe07d6b38e08355d2",
+		"SpanID": "4caa9d238c615a1a",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:46.572637153+01:00",
+	"EndTime": "2026-03-16T18:53:46.572665673+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 4
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "19d4dc19c4ce8defe07d6b38e08355d2",
+		"SpanID": "4caa9d238c615a1a",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:46.572624512+01:00",
+	"EndTime": "2026-03-16T18:53:46.572682303+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Timestamp": "2026-03-16T18:53:47.517438997+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:47.517443147+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 3
+			}
+		}
+	],
+	"TraceID": "f27d4cc193fa2328ba0d5fee4274b127",
+	"SpanID": "b3ca9e0398f9f7c6",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Timestamp": "2026-03-16T18:53:47.676626778+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:47.676630538+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 6
+			}
+		}
+	],
+	"TraceID": "d92d108d4f2562e21d1129b8dffdf0a8",
+	"SpanID": "6ae7bde9744a1094",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Timestamp": "2026-03-16T18:53:47.852952121+01:00",
+	"ObservedTimestamp": "2026-03-16T18:53:47.852957672+01:00",
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 6
+			}
+		}
+	],
+	"TraceID": "b5490d832a6f77a88a392eab2d8abc97",
+	"SpanID": "1353f18b11e3641d",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "f27d4cc193fa2328ba0d5fee4274b127",
+		"SpanID": "b3ca9e0398f9f7c6",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "f27d4cc193fa2328ba0d5fee4274b127",
+		"SpanID": "b2c4eefa99a2c946",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:47.517432187+01:00",
+	"EndTime": "2026-03-16T18:53:47.517456597+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 3
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "f27d4cc193fa2328ba0d5fee4274b127",
+		"SpanID": "b2c4eefa99a2c946",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:47.517422146+01:00",
+	"EndTime": "2026-03-16T18:53:47.517473747+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "d92d108d4f2562e21d1129b8dffdf0a8",
+		"SpanID": "6ae7bde9744a1094",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "d92d108d4f2562e21d1129b8dffdf0a8",
+		"SpanID": "85dc9d14f5b68a84",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:47.676619758+01:00",
+	"EndTime": "2026-03-16T18:53:47.676647109+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 6
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "d92d108d4f2562e21d1129b8dffdf0a8",
+		"SpanID": "85dc9d14f5b68a84",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:47.676605358+01:00",
+	"EndTime": "2026-03-16T18:53:47.676664749+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "roll",
+	"SpanContext": {
+		"TraceID": "b5490d832a6f77a88a392eab2d8abc97",
+		"SpanID": "1353f18b11e3641d",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "b5490d832a6f77a88a392eab2d8abc97",
+		"SpanID": "b74d0f3e6687371a",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 1,
+	"StartTime": "2026-03-16T18:53:47.852944671+01:00",
+	"EndTime": "2026-03-16T18:53:47.852969722+01:00",
+	"Attributes": [
+		{
+			"Key": "roll.value",
+			"Value": {
+				"Type": "INT64",
+				"Value": 6
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 0,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Name": "/",
+	"SpanContext": {
+		"TraceID": "b5490d832a6f77a88a392eab2d8abc97",
+		"SpanID": "b74d0f3e6687371a",
+		"TraceFlags": "01",
+		"TraceState": "",
+		"Remote": false
+	},
+	"Parent": {
+		"TraceID": "00000000000000000000000000000000",
+		"SpanID": "0000000000000000",
+		"TraceFlags": "00",
+		"TraceState": "",
+		"Remote": false
+	},
+	"SpanKind": 2,
+	"StartTime": "2026-03-16T18:53:47.852924461+01:00",
+	"EndTime": "2026-03-16T18:53:47.852983662+01:00",
+	"Attributes": [
+		{
+			"Key": "server.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "localhost"
+			}
+		},
+		{
+			"Key": "http.request.method",
+			"Value": {
+				"Type": "STRING",
+				"Value": "GET"
+			}
+		},
+		{
+			"Key": "url.scheme",
+			"Value": {
+				"Type": "STRING",
+				"Value": "http"
+			}
+		},
+		{
+			"Key": "server.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 8080
+			}
+		},
+		{
+			"Key": "network.peer.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "network.peer.port",
+			"Value": {
+				"Type": "INT64",
+				"Value": 41790
+			}
+		},
+		{
+			"Key": "user_agent.original",
+			"Value": {
+				"Type": "STRING",
+				"Value": "Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0"
+			}
+		},
+		{
+			"Key": "client.address",
+			"Value": {
+				"Type": "STRING",
+				"Value": "127.0.0.1"
+			}
+		},
+		{
+			"Key": "url.path",
+			"Value": {
+				"Type": "STRING",
+				"Value": "/rolldice"
+			}
+		},
+		{
+			"Key": "network.protocol.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.1"
+			}
+		},
+		{
+			"Key": "http.response.body.size",
+			"Value": {
+				"Type": "INT64",
+				"Value": 2
+			}
+		},
+		{
+			"Key": "http.response.status_code",
+			"Value": {
+				"Type": "INT64",
+				"Value": 200
+			}
+		}
+	],
+	"Events": null,
+	"Links": null,
+	"Status": {
+		"Code": "Unset",
+		"Description": ""
+	},
+	"DroppedAttributes": 0,
+	"DroppedEvents": 0,
+	"DroppedLinks": 0,
+	"ChildSpanCount": 1,
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "dice-service"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"InstrumentationScope": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	},
+	"InstrumentationLibrary": {
+		"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+		"Version": "0.67.0",
+		"SchemaURL": "",
+		"Attributes": null
+	}
+}
+{
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"ScopeMetrics": [
+		{
+			"Scope": {
+				"Name": "go.opentelemetry.io/contrib/examples/dice",
+				"Version": "",
+				"SchemaURL": "",
+				"Attributes": null
+			},
+			"Metrics": [
+				{
+					"Name": "dice.rolls",
+					"Description": "The number of rolls by roll value",
+					"Unit": "{roll}",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 5
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:49.385717458+01:00",
+								"Value": 2,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:45.886435685+01:00",
+										"Value": 1,
+										"SpanID": "YPl/LDRkDss=",
+										"TraceID": "NVpSfS8jIMVMmy1PK7JBdg=="
+									},
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.388663502+01:00",
+										"Value": 1,
+										"SpanID": "JgqKPaqlNeA=",
+										"TraceID": "p+ZSBy3a4TLsi+5W19+cqg=="
+									}
+								]
+							},
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 1
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:49.385717458+01:00",
+								"Value": 2,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:44.446866885+01:00",
+										"Value": 1,
+										"SpanID": "RlfZ2MALr7U=",
+										"TraceID": "o3XejQBHnNusyA1WE45WlQ=="
+									},
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.149389985+01:00",
+										"Value": 1,
+										"SpanID": "ICvfO3v8fBM=",
+										"TraceID": "LUwjVswDPS9wWH8G//4BeA=="
+									}
+								]
+							},
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 6
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:49.385717458+01:00",
+								"Value": 2,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:47.676643679+01:00",
+										"Value": 1,
+										"SpanID": "aue96XRKEJQ=",
+										"TraceID": "2S0QjU8lYuIdESm43/3wqA=="
+									},
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:47.852965802+01:00",
+										"Value": 1,
+										"SpanID": "E1PxixHjZB0=",
+										"TraceID": "tUkNgypvd6iKOS6rLYq8lw=="
+									}
+								]
+							},
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 3
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:49.385717458+01:00",
+								"Value": 1,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:47.517453217+01:00",
+										"Value": 1,
+										"SpanID": "s8qeA5j598Y=",
+										"TraceID": "8n1MwZP6Iyi6DV/uQnSxJw=="
+									}
+								]
+							},
+							{
+								"Attributes": [
+									{
+										"Key": "roll.value",
+										"Value": {
+											"Type": "INT64",
+											"Value": 4
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989159464+01:00",
+								"Time": "2026-03-16T18:53:49.385717458+01:00",
+								"Value": 1,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:46.572661163+01:00",
+										"Value": 1,
+										"SpanID": "q0s6heyzXsQ=",
+										"TraceID": "GdTcGcTOje/gfWs44INV0g=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality",
+						"IsMonotonic": true
+					}
+				}
+			]
+		},
+		{
+			"Scope": {
+				"Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+				"Version": "0.67.0",
+				"SchemaURL": "",
+				"Attributes": null
+			},
+			"Metrics": [
+				{
+					"Name": "http.server.request.body.size",
+					"Description": "Size of HTTP server request bodies.",
+					"Unit": "By",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "http.request.method",
+										"Value": {
+											"Type": "STRING",
+											"Value": "GET"
+										}
+									},
+									{
+										"Key": "http.response.status_code",
+										"Value": {
+											"Type": "INT64",
+											"Value": 200
+										}
+									},
+									{
+										"Key": "network.protocol.name",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									},
+									{
+										"Key": "network.protocol.version",
+										"Value": {
+											"Type": "STRING",
+											"Value": "1.1"
+										}
+									},
+									{
+										"Key": "server.address",
+										"Value": {
+											"Type": "STRING",
+											"Value": "localhost"
+										}
+									},
+									{
+										"Key": "server.port",
+										"Value": {
+											"Type": "INT64",
+											"Value": 8080
+										}
+									},
+									{
+										"Key": "url.scheme",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989651691+01:00",
+								"Time": "2026-03-16T18:53:49.385738659+01:00",
+								"Count": 8,
+								"Bounds": [
+									0,
+									5,
+									10,
+									25,
+									50,
+									75,
+									100,
+									250,
+									500,
+									750,
+									1000,
+									2500,
+									5000,
+									7500,
+									10000
+								],
+								"BucketCounts": [
+									8,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0
+								],
+								"Min": 0,
+								"Max": 0,
+								"Sum": 0,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:47.852979862+01:00",
+										"Value": 0,
+										"SpanID": "t00PPmaHNxo=",
+										"TraceID": "tUkNgypvd6iKOS6rLYq8lw=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality"
+					}
+				},
+				{
+					"Name": "http.server.response.body.size",
+					"Description": "Size of HTTP server response bodies.",
+					"Unit": "By",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "http.request.method",
+										"Value": {
+											"Type": "STRING",
+											"Value": "GET"
+										}
+									},
+									{
+										"Key": "http.response.status_code",
+										"Value": {
+											"Type": "INT64",
+											"Value": 200
+										}
+									},
+									{
+										"Key": "network.protocol.name",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									},
+									{
+										"Key": "network.protocol.version",
+										"Value": {
+											"Type": "STRING",
+											"Value": "1.1"
+										}
+									},
+									{
+										"Key": "server.address",
+										"Value": {
+											"Type": "STRING",
+											"Value": "localhost"
+										}
+									},
+									{
+										"Key": "server.port",
+										"Value": {
+											"Type": "INT64",
+											"Value": 8080
+										}
+									},
+									{
+										"Key": "url.scheme",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989655211+01:00",
+								"Time": "2026-03-16T18:53:49.385745059+01:00",
+								"Count": 8,
+								"Bounds": [
+									0,
+									5,
+									10,
+									25,
+									50,
+									75,
+									100,
+									250,
+									500,
+									750,
+									1000,
+									2500,
+									5000,
+									7500,
+									10000
+								],
+								"BucketCounts": [
+									0,
+									8,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0
+								],
+								"Min": 2,
+								"Max": 2,
+								"Sum": 16,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:47.852981152+01:00",
+										"Value": 2,
+										"SpanID": "t00PPmaHNxo=",
+										"TraceID": "tUkNgypvd6iKOS6rLYq8lw=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality"
+					}
+				},
+				{
+					"Name": "http.server.request.duration",
+					"Description": "Duration of HTTP server requests.",
+					"Unit": "s",
+					"Data": {
+						"DataPoints": [
+							{
+								"Attributes": [
+									{
+										"Key": "http.request.method",
+										"Value": {
+											"Type": "STRING",
+											"Value": "GET"
+										}
+									},
+									{
+										"Key": "http.response.status_code",
+										"Value": {
+											"Type": "INT64",
+											"Value": 200
+										}
+									},
+									{
+										"Key": "network.protocol.name",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									},
+									{
+										"Key": "network.protocol.version",
+										"Value": {
+											"Type": "STRING",
+											"Value": "1.1"
+										}
+									},
+									{
+										"Key": "server.address",
+										"Value": {
+											"Type": "STRING",
+											"Value": "localhost"
+										}
+									},
+									{
+										"Key": "server.port",
+										"Value": {
+											"Type": "INT64",
+											"Value": 8080
+										}
+									},
+									{
+										"Key": "url.scheme",
+										"Value": {
+											"Type": "STRING",
+											"Value": "http"
+										}
+									}
+								],
+								"StartTime": "2026-03-16T18:53:40.989660941+01:00",
+								"Time": "2026-03-16T18:53:49.385748659+01:00",
+								"Count": 8,
+								"Bounds": [
+									0.005,
+									0.01,
+									0.025,
+									0.05,
+									0.075,
+									0.1,
+									0.25,
+									0.5,
+									0.75,
+									1,
+									2.5,
+									5,
+									7.5,
+									10
+								],
+								"BucketCounts": [
+									8,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0,
+									0
+								],
+								"Min": 0.000056511,
+								"Max": 0.000122582,
+								"Sum": 0.0005832400000000001,
+								"Exemplars": [
+									{
+										"FilteredAttributes": null,
+										"Time": "2026-03-16T18:53:47.852983272+01:00",
+										"Value": 0.000064621,
+										"SpanID": "t00PPmaHNxo=",
+										"TraceID": "tUkNgypvd6iKOS6rLYq8lw=="
+									}
+								]
+							}
+						],
+						"Temporality": "CumulativeTemporality"
+					}
+				}
+			]
+		}
+	]
+}

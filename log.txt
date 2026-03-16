@@ -1,0 +1,66 @@
+// produced by
+//logger.InfoContext(ctx, msg, "result", roll)
+// because i used:
+// otelslog.NewLogger(name) - OtelSlog bridge
+
+{
+	"Timestamp": "2026-03-16T18:53:46.572644843+01:00", // when the event hapened
+	"ObservedTimestamp": "2026-03-16T18:53:46.572649253+01:00", // when the telemetry system saw it
+	"Severity": 9,
+	"SeverityText": "INFO",
+	"Body": {
+		"Type": "String",
+		"Value": "Anonymous player is rolling the dice"
+	},
+	"Attributes": [
+		{
+			"Key": "result",
+			"Value": {
+				"Type": "Int64",
+				"Value": 4
+			}
+		}
+	],
+	"TraceID": "19d4dc19c4ce8defe07d6b38e08355d2",
+	"SpanID": "ab4b3a85ecb35ec4",
+	"TraceFlags": "01",
+	"Resource": [
+		{
+			"Key": "service.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "unknown_service:dice"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.language",
+			"Value": {
+				"Type": "STRING",
+				"Value": "go"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.name",
+			"Value": {
+				"Type": "STRING",
+				"Value": "opentelemetry"
+			}
+		},
+		{
+			"Key": "telemetry.sdk.version",
+			"Value": {
+				"Type": "STRING",
+				"Value": "1.42.0"
+			}
+		}
+	],
+	"Scope": {
+		"Name": "go.opentelemetry.io/contrib/examples/dice",
+		"Version": "",
+		"SchemaURL": "",
+		"Attributes": {}
+	},
+	"DroppedAttributes": 0
+}
+
+

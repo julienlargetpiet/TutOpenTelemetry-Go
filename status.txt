@@ -1,0 +1,4 @@
+Status	Meaning
+Unset	no explicit status
+Ok	operation succeeded
+Error	operation failed

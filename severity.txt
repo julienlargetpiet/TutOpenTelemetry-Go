@@ -1,0 +1,7 @@
+Level	Number
+TRACE	1–4
+DEBUG	5–8
+INFO	9–12
+WARN	13–16
+ERROR	17–20
+FATAL	21–24
